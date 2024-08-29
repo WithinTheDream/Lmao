@@ -1,0 +1,229 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: 
+        linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%), 
+        url('img/worlds-Aflame-Crimson-Night-official-wallpaper-genshin-2.jpg');
+    background-position: center;
+    background-blend-mode: multiply;
+    background-size: cover;
+    background-color: #282836;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.header {
+    /* background-image: url(img/Screenshot\ \(403\).png); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-decoration: none;
+}
+
+.header h1 {
+    color: rgb(255, 255, 255);
+}
+
+.openbtn {
+    margin-left: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #4e4c55;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+.logo {
+    height: 30px;
+}
+
+.discord-link {
+    display: flex;
+    align-items: center;
+}
+
+.discord-logo {
+    height: 30px;
+    padding-right: 40px;
+}
+
+.sidebar {
+    
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    
+}
+
+.sidebar h2 {
+    color: #ffffff;
+    text-align: left;
+    margin-top: -44px;
+    padding: 0px 20px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    padding: 10px;
+
+    transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover {
+    background-color: #333;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    color: #fff;
+}
+
+h1 {
+    padding-left: 0px;
+}
+
+h2 {
+    font-size: 13px;
+}
+
+/* .content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #666;
+    margin-top: 10px;
+} */
+
+.closebtn {
+    text-decoration: none;
+    padding: 10px 0px;
+
+}
+
+.container {
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+
+.item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -10px;
+    margin-top: 0px;
+    font-size: 10px;
+    color: #ffffff;
+}
+
+.c {
+    background-image: url('img/Screenshot\ \(121\).png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+    transition: background-size 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.t {
+    background-image: url('img/Screenshot\ \(116\).png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+    transition: background-size 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.f {
+    background-image: url('img/Screenshot\ \(126\).png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 400px;
+    height: 100px;
+    cursor: pointer;
+    transition: background-size 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.squarecontent:hover {
+    background-size: 120%; /* Zoom in on hover */
+}
+
+.info{
+    text-align: center;
+    color: white;
+    margin: 10px 50px;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+    margin-top: -150px;
+}
+
+/* Media query to adjust for smaller screens */
+@media (max-width: 600px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .item {
+        margin-bottom: 20px;
+    }
+}
